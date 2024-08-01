@@ -1,0 +1,3112 @@
+{
+  "dx": [
+    {
+      "id": 1,
+      "name": "acute_nasopharyngitis",
+      "level": 1
+    },
+    {
+      "id": 2,
+      "name": "acute_bronchitis",
+      "level": 1
+    },
+    {
+      "id": 3,
+      "name": "acute_gastroenteritis",
+      "level": 1
+    },
+    {
+      "id": 4,
+      "name": "acute_bronchiolitis",
+      "level": 2
+    },
+    {
+      "id": 5,
+      "name": "pneumonia",
+      "level": 2
+    },
+    {
+      "id": 6,
+      "name": "dengue_fever",
+      "level": 2
+    }
+  ],
+  "pd": [
+    {
+      "id": 1,
+      "name": "gender"
+    },
+    {
+      "id": 2,
+      "name": "age"
+    }
+  ],
+  "sym": [
+    {
+      "id": 1,
+      "name": "sore_throat",
+      "t_name": "เจ็บคอ",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการเจ็บคอมากี่วัน ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 14 วัน"
+            },
+            {
+              "id": 2,
+              "name": "chronic",
+              "t_name": "> 14 วัน"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "severity",
+          "question": "อาการเจ็บคอมากเท่าไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "mild",
+              "t_name": "เล็กน้อย"
+            },
+            {
+              "id": 2,
+              "name": "mod",
+              "t_name": "ปานกลาง"
+            },
+            {
+              "id": 3,
+              "name": "severe",
+              "t_name": "รุนแรง"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "progression",
+          "question": "ตอนนี้อาการเจ็บคอเป็นอย่างไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "improving",
+              "t_name": "อาการเจ็บทุเลา"
+            },
+            {
+              "id": 2,
+              "name": "transient",
+              "t_name": "อาการเจ็บเป็นๆ หายๆ "
+            },
+            {
+              "id": 3,
+              "name": "non-progress",
+              "t_name": "อาการเจ็บเท่าเดิม"
+            },
+            {
+              "id": 4,
+              "name": "progressive",
+              "t_name": "อาการเจ็บมากขึ้น"
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 2,
+      "name": "runny_nose",
+      "t_name": "คัดจมูก/มีน้ำมูก",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการคัดจมูก/มีน้ำมูกมากี่วัน ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 14 วัน"
+            },
+            {
+              "id": 2,
+              "name": "chronic",
+              "t_name": "> 14 วัน"
+            }
+          ],
+          "value": "0"
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 3,
+      "name": "fever",
+      "t_name": "ไข้",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการไข้มากี่วัน ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 7 วัน"
+            },
+            {
+              "id": 2,
+              "name": "subacute",
+              "t_name": " 8 - 14 วัน"
+            },
+            {
+              "id": 3,
+              "name": "chronic",
+              "t_name": "> 14 วัน"
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 4,
+      "name": "cough",
+      "t_name": "ไอ",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการไอมากี่วัน ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 14 วัน"
+            },
+            {
+              "id": 2,
+              "name": "chronic",
+              "t_name": "> 14 วัน"
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 5,
+      "name": "dyspnea",
+      "t_name": "หายใจเหนื่อย",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการหายใจเหนื่อยมากี่วัน ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 7 วัน"
+            },
+            {
+              "id": 2,
+              "name": "chronic",
+              "t_name": "> 7 วัน"
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 6,
+      "name": "headache",
+      "t_name": "ปวดศีรษะ",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการปวดศีรษะมานานเท่าไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 1 เดือน"
+            },
+            {
+              "id": 2,
+              "name": "chronic",
+              "t_name": "> 1 เดือน"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "severity",
+          "question": "อาการปวดเป็นมากเท่าไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "mild",
+              "t_name": "เล็กน้อย"
+            },
+            {
+              "id": 2,
+              "name": "mod",
+              "t_name": "ปานกลาง"
+            },
+            {
+              "id": 3,
+              "name": "severe",
+              "t_name": "รุนแรง"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "progression",
+          "question": "ตอนนี้อาการปวดเป็นอย่างไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "improving",
+              "t_name": "อาการปวดทุเลา"
+            },
+            {
+              "id": 2,
+              "name": "transient",
+              "t_name": "อาการปวดเป็นๆ หายๆ "
+            },
+            {
+              "id": 3,
+              "name": "non-progress",
+              "t_name": "อาการปวดเท่าเดิม"
+            },
+            {
+              "id": 4,
+              "name": "progressive",
+              "t_name": "อาการปวดมากขึ้น"
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 7,
+      "name": "muscle_pain",
+      "t_name": "ปวดกล้ามเนื้อ",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการปวดกล้ามเนื้อมานานเท่าไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 1 เดือน"
+            },
+            {
+              "id": 2,
+              "name": "chronic",
+              "t_name": "> 1 เดือน"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "severity",
+          "question": "อาการปวดเป็นมากเท่าไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "mild",
+              "t_name": "เล็กน้อย"
+            },
+            {
+              "id": 2,
+              "name": "mod",
+              "t_name": "ปานกลาง"
+            },
+            {
+              "id": 3,
+              "name": "severe",
+              "t_name": "รุนแรง"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "progression",
+          "question": "ตอนนี้อาการปวดเป็นอย่างไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "improving",
+              "t_name": "อาการปวดทุเลา"
+            },
+            {
+              "id": 2,
+              "name": "transient",
+              "t_name": "อาการปวดเป็นๆ หายๆ "
+            },
+            {
+              "id": 3,
+              "name": "non-progress",
+              "t_name": "อาการปวดเท่าเดิม"
+            },
+            {
+              "id": 4,
+              "name": "progressive",
+              "t_name": "อาการปวดมากขึ้น"
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 8,
+      "name": "diarrhea",
+      "t_name": "ท้องเสีย",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการท้องเสียมากี่วัน ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 7 วัน"
+            },
+            {
+              "id": 2,
+              "name": "chronic",
+              "t_name": "> 7 วัน"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "frequency",
+          "question": "จำนวนการถ่ายใน 1 วัน เป็นเท่าไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "mild",
+              "t_name": "< 5 ครั้ง"
+            },
+            {
+              "id": 2,
+              "name": "mod",
+              "t_name": "5 - 10 ครั้ง"
+            },
+            {
+              "id": 3,
+              "name": "severe",
+              "t_name": "> 10  ครั้ง"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "with_mucus",
+          "question": "มีถ่ายปนมูกหรือไม่ไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "absent",
+              "t_name": "ไม่มี"
+            },
+            {
+              "id": 2,
+              "name": "present",
+              "t_name": "มี"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "with_blood",
+          "question": "มีถ่ายปนเลือดหรือไม่ ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "absent",
+              "t_name": "ไม่มี"
+            },
+            {
+              "id": 2,
+              "name": "present",
+              "t_name": "มี"
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 9,
+      "name": "-",
+      "detail": ["duration"]
+    },
+    {
+      "id": 10,
+      "name": "abdominal_pain",
+      "t_name": "ปวดท้อง",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการปวดท้องมานานเท่าไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "acute",
+              "t_name": "<= 7 วัน"
+            },
+            {
+              "id": 2,
+              "name": "chronic",
+              "t_name": "> 7 วัน"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "severity",
+          "question": "อาการปวดเป็นมากเท่าไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "mild",
+              "t_name": "เล็กน้อย"
+            },
+            {
+              "id": 2,
+              "name": "mod",
+              "t_name": "ปานกลาง"
+            },
+            {
+              "id": 3,
+              "name": "severe",
+              "t_name": "รุนแรง"
+            }
+          ],
+          "value": 0
+        },
+        {
+          "name": "progression",
+          "question": "ตอนนี้อาการปวดเป็นอย่างไร ?",
+          "options": [
+            {
+              "id": 1,
+              "name": "improving",
+              "t_name": "อาการปวดทุเลา"
+            },
+            {
+              "id": 2,
+              "name": "transient",
+              "t_name": "อาการปวดเป็นๆ หายๆ "
+            },
+            {
+              "id": 3,
+              "name": "non-progress",
+              "t_name": "อาการปวดเท่าเดิม"
+            },
+            {
+              "id": 4,
+              "name": "progressive",
+              "t_name": "อาการปวดมากขึ้น"
+            }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 11,
+      "name": "nausea",
+      "t_name": "คลื่นไส้",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการคลื่นไส้มากี่วัน ?",
+          "options": [
+            { "id": 1, "name": "acute", "t_name": "<= 7 วัน" },
+            { "id": 2, "name": "subacute", "t_name": " 8 - 14 วัน" },
+            { "id": 3, "name": "chronic", "t_name": "> 14 วัน" }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 12,
+      "name": "fatigue",
+      "t_name": "อ่อนเพลีย",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการอ่อนเพลียมามานานเท่าไร ?",
+          "options": [
+            { "id": 1, "name": "acute", "t_name": "<= 1 เดือน" },
+            { "id": 2, "name": "chronic", "t_name": "> 1 เดือน" }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 13,
+      "name": "abnormal_breath_sound",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการหลายใจเสียงดังกี่วัน ?",
+          "options": [
+            { "id": 1, "name": "acute", "t_name": "<= 7 วัน" },
+            { "id": 3, "name": "chronic", "t_name": "> 14 วัน" }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 14,
+      "name": "phelgm",
+      "t_name": "มีเสมหะ",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีเสมหะมากี่วัน ?",
+          "options": [
+            { "id": 1, "name": "acute", "t_name": "<= 7 วัน" },
+            { "id": 2, "name": "chronic", "t_name": "> 14 วัน" }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    },
+    {
+      "id": 15,
+      "name": "loss_of_appetile",
+      "t_name": "เบื่ออาหาร",
+      "detail": [
+        {
+          "name": "duration",
+          "question": "ผู้ป่วยมีอาการเบื่ออาหารมานานเท่าไร ?",
+          "options": [
+            { "id": 1, "name": "acute", "t_name": "<= 1 เดือน" },
+            { "id": 2, "name": "chronic", "t_name": "1 เดือน" }
+          ],
+          "value": 0
+        }
+      ],
+      "value": 0
+    }
+  ],
+  "mr": [
+    {
+      "id": 1,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 2,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 2,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 2,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "dx": 1,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "dx": 2,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "dx": 3,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 8,
+          "duration": 1,
+          "frequency": 0,
+          "with_mucus": 0,
+          "with_blood": 0
+        },
+        {
+          "id": 10,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0,
+          "location": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "dx": 4,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 13,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "dx": 4,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        },
+        {
+          "id": 13,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "dx": 4,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 13,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "dx": 4,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        },
+        {
+          "id": 13,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "dx": 4,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        },
+        {
+          "id": 13,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "dx": 5,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "dx": 5,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "dx": 5,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 2,
+          "duration": 1
+        },
+        {
+          "id": 14,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "dx": 5,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 1,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "dx": 5,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 5,
+          "duration": 1
+        },
+        {
+          "id": 4,
+          "duration": 1,
+          "with_barking": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "dx": 6,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "dx": 6,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 1
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 7,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 8
+        },
+        {
+          "id": 11
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 15
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "dx": 6,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 2
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 7
+        },
+        {
+          "id": 8
+        },
+        {
+          "id": 15
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "dx": 6,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 7
+        },
+        {
+          "id": 12
+        },
+        {
+          "id": 15
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "dx": 6,
+      "ph_ud": [],
+      "pd": [
+        {
+          "id": 2,
+          "value": 3
+        }
+      ],
+      "cc": [
+        {
+          "id": 3,
+          "duration": 1,
+          "level": 0,
+          "progression": 0
+        }
+      ],
+      "pi_p": [
+        {
+          "id": 6,
+          "duration": 1,
+          "severity": 0,
+          "progression": 0
+        },
+        {
+          "id": 11,
+          "duration": 1
+        },
+        {
+          "id": 12,
+          "duration": 1
+        },
+        {
+          "id": 15,
+          "duration": 1
+        }
+      ],
+      "pi_n": [
+        {
+          "id": 5
+        },
+        {
+          "id": 7
+        }
+      ]
+    }
+  ]
+}
