@@ -63,10 +63,10 @@ def find_index_item(items: list, id: int) -> int:
 def display_disease(probable_disease: dict):
     disease_id = list(probable_disease.keys())
     result = []
-    for d in disease_id:
+    for d in disease_id[:5]:
       idx = find_index_item(db.dx, int(d))
       if id != -1:
-        result.append(db.dx[idx]['name'])
+        result.append(db.dx[idx]['t_name'])
     return result
 
 

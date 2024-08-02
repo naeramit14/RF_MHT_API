@@ -3,31 +3,37 @@
     {
       "id": 1,
       "name": "acute_nasopharyngitis",
+      "t_name": "การติดเชื้อบริเวณจมูกและลำคอ",
       "level": 1
     },
     {
       "id": 2,
       "name": "acute_bronchitis",
+      "t_name": "หลอดลมอักเสบ",
       "level": 1
     },
     {
       "id": 3,
       "name": "acute_gastroenteritis",
+      "t_name": "กระเพาะและลำไส้อักเสบ",
       "level": 1
     },
     {
       "id": 4,
       "name": "acute_bronchiolitis",
+      "t_name": "หลอดลมขนาดเล็กอักเสบ",
       "level": 2
     },
     {
       "id": 5,
       "name": "pneumonia",
+      "t_name": "ปอดติดเชื้อ",
       "level": 2
     },
     {
       "id": 6,
       "name": "dengue_fever",
+      "t_name": "ไข้เลือดออก",
       "level": 2
     }
   ],
