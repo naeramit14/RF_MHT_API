@@ -3,10 +3,10 @@ import Database as DB
 import Diferertial_diagnosis as DDX
 
 
-with open('./RF_model_1.json', 'r') as openfile:
+with open('./Q_table_1.json', 'r') as openfile:
     Q_table = json.load(openfile)
 
-db = DB.Database(True)
+db = DB.Database()
 ddx = DDX.Differtial_diagnosis(db)
 action = [s['id'] for s in db.sym]
 max_action = 5
@@ -73,3 +73,24 @@ def display_disease(probable_disease: dict):
 def get_probaple_disease(record: dict):
     probable_disease = ddx.probable_disease(record)
     return  display_disease(probable_disease)
+
+def get_cheif_complaint():
+    summary = {}
+    for record in db.mr:
+        try:
+            id = record['cc'][0]['id']
+            if id in summary:
+                summary[id] += 1
+            else:
+                summary[id] = 1
+        except:
+            pass
+    sorted_summary = sorted(summary.items(), key=lambda kv: (kv[1], kv[0]) , reverse=True)
+    cheif_complaint = []
+    symptom = db.sym
+    for arr in sorted_summary:
+        index = find_index_item(symptom, arr[0])
+        if index != -1:
+            cheif_complaint.append(symptom[index])
+    print('cc-amount: ', len(cheif_complaint))
+    return cheif_complaint

@@ -27,7 +27,7 @@ class Recorded(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"result": []}
+    return {"result": "welcome history taking"}
 
 
 @app.post("/history-taking/")
@@ -54,3 +54,7 @@ def probaple_disease(recorded: Recorded):
         }
     print("record: ", record)
     return ht.get_probaple_disease(record)
+
+@app.get("/cheif_complaint/")
+def cheif_complaint():
+    return ht.get_cheif_complaint()

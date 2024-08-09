@@ -3,7 +3,7 @@ class Differtial_diagnosis:
     self.mr = db.mr
     self.dx = db.dx
     self.accepted_score = 0.9
-    self.mr_weight =  {'ph_ud': 0.1, 'pd': 0.1, 'cc': 0.2 , 'pi_p': 0.7, 'pi_n': -0.1}
+    self.mr_weight =  {'ph_ud': 0.1, 'pd': 0.1, 'cc': 0.1 , 'pi_p': 0.8, 'pi_n': -0.1}
 
   def find_index_item(self, items: list, id: int) -> int:
     for index, item in enumerate(items):
